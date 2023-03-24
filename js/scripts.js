@@ -5,12 +5,10 @@ function findScore(){
   score += parseInt(document.querySelector("input[name='past']:checked").value);
   score += parseInt(document.querySelector("select#time").value);
   score += parseInt(document.querySelector("select#lett").value);
-  console.log(score);
   return score;
 }
 
 //UI
-
 function completedForm(event){
   event.preventDefault();
   const score = findScore();
@@ -57,11 +55,12 @@ function revealAnswer(score){
     document.querySelector("a#showLink").innerText="Click here to learn about C#";
   }  
 }
-
+//id names
+//completedForm
+//randomize
 window.addEventListener("load", function(){
-  const form = document.querySelector("#languageFinder");
-  const randomizer = document.querySelector("#randomize");
-  const completeForm = document.querySelector("#completedForm")
-  console.log("form " +form.value);
-  form.addEventListener("submit", completedForm);
+   const randomizer = document.querySelector("#randomize");
+   const cForm = document.querySelector("#completedForm");
+   randomizer.addEventListener("click",randomizedLanguage);
+   cForm.addEventListener("click", completedForm);
 });
