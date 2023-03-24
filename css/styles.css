@@ -5,4 +5,12 @@
 body {
   margin-left: 20%;
   margin-right: 20%;
+  background-color: rgba(12, 10, 10, 0.939);
+  color:rgba(225, 203, 163, 0.95);
+}
+
+#showLanguage{
+  font-style: italic;
+  font-weight: bold;
+  color: yellow;
 }

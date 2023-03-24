@@ -29,28 +29,35 @@ function revealAnswer(score){
   if(score > 5){
     //learn SQL    
     document.querySelector("span#showLanguage").innerText ="SQL";
-    document.querySelector("spawn#showLink").href="https://en.wikipedia.org/wiki/SQL";
+    document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/SQL";
+    document.querySelector("a#showLink").innerText="Click me to learn about SQL";
   } else if(score >= 3){
     //learn python  
     document.querySelector("span#showLanguage").innerText ="Python";
-    document.querySelector("spawn#showLink").href="https://en.wikipedia.org/wiki/Python_(programming_language)";
+    document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/Python_(programming_language)";
+    document.querySelector("a#showLink").innerText="Click me to learn about Python";
   } else if(score > 0){
     // learn js     
     document.querySelector("span#showLanguage").innerText ="JavaScript";
-    document.querySelector("spawn#showLink").href="https://en.wikipedia.org/wiki/JavaScript";
+    document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/JavaScript";
+    document.querySelector("a#showLink").innerText="Click me to learn about JavaScript";
   } else if(score ===0){
     // learn R      
+    console.log("hi")
     document.querySelector("span#showLanguage").innerText ="R";
-    document.querySelector("spawn#showLink").href="https://en.wikipedia.org/wiki/R_(programming_language)";
+    document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/R_(programming_language)";
+    document.querySelector("a#showLink").innerText="Click me to learn about R";
   } else if(score >= -3){
     //learn C       
     document.querySelector("span#showLanguage").innerText ="C";
-    document.querySelector("spawn#showLink").href="https://en.wikipedia.org/wiki/C_(programming_language)";
+    document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/C_(programming_language)";
+    document.querySelector("a#showLink").innerText="Click me to learn about C";
   } else{
     //learn C#      
     document.querySelector("span#showLanguage").innerText ="C#";
-    document.querySelector("spawn#showLink").href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)";
-  }
+    document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)";
+    document.querySelector("a#showLink").innerText="Click me to learn about C#";
+  }  
 }
 
 window.addEventListener("load", function(){
