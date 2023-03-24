@@ -11,17 +11,16 @@ function findScore(){
 
 //UI
 
-
 function completedForm(event){
   event.preventDefault();
   const score = findScore();
-  console.log("comepleted form"+score);
+  console.log("comepleted form score - "+score);
   revealAnswer(score);
 }
 function randomizedLanguage(event){
   event.preventDefault();
   const score = Math.round(Math.random()*10) -5;
-  console.log("randomized score"+score);
+  console.log("randomized score - "+score);
   revealAnswer(score);
 }
 function revealAnswer(score){
@@ -30,37 +29,39 @@ function revealAnswer(score){
     //learn SQL    
     document.querySelector("span#showLanguage").innerText ="SQL";
     document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/SQL";
-    document.querySelector("a#showLink").innerText="Click me to learn about SQL";
+    document.querySelector("a#showLink").innerText="Click here to learn about SQL";
   } else if(score >= 3){
     //learn python  
     document.querySelector("span#showLanguage").innerText ="Python";
     document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/Python_(programming_language)";
-    document.querySelector("a#showLink").innerText="Click me to learn about Python";
+    document.querySelector("a#showLink").innerText="Click here to learn about Python";
   } else if(score > 0){
     // learn js     
     document.querySelector("span#showLanguage").innerText ="JavaScript";
     document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/JavaScript";
-    document.querySelector("a#showLink").innerText="Click me to learn about JavaScript";
+    document.querySelector("a#showLink").innerText="Click here to learn about JavaScript";
   } else if(score ===0){
     // learn R      
-    console.log("hi")
     document.querySelector("span#showLanguage").innerText ="R";
     document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/R_(programming_language)";
-    document.querySelector("a#showLink").innerText="Click me to learn about R";
+    document.querySelector("a#showLink").innerText="Click here to learn about R";
   } else if(score >= -3){
     //learn C       
     document.querySelector("span#showLanguage").innerText ="C";
     document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/C_(programming_language)";
-    document.querySelector("a#showLink").innerText="Click me to learn about C";
+    document.querySelector("a#showLink").innerText="Click here to learn about C";
   } else{
     //learn C#      
     document.querySelector("span#showLanguage").innerText ="C#";
     document.querySelector("a#showLink").href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)";
-    document.querySelector("a#showLink").innerText="Click me to learn about C#";
+    document.querySelector("a#showLink").innerText="Click here to learn about C#";
   }  
 }
 
 window.addEventListener("load", function(){
   const form = document.querySelector("#languageFinder");
+  const randomizer = document.querySelector("#randomize");
+  const completeForm = document.querySelector("#completedForm")
+  console.log("form " +form.value);
   form.addEventListener("submit", completedForm);
 });
