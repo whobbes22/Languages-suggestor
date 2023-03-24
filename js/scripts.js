@@ -26,15 +26,15 @@ function randomizedLanguage(event){
 }
 function revealAnswer(score){
   if(score >= 4){
-
+    //learn python  https://en.wikipedia.org/wiki/Python_(programming_language)
   } else if(score > 0){
-
+    // learn js     https://en.wikipedia.org/wiki/JavaScript
   } else if(score ===0){
-
+    // learn R      https://en.wikipedia.org/wiki/R_(programming_language)
   } else if(score >= -3){
-
+    //learn C       https://en.wikipedia.org/wiki/C_(programming_language)
   } else{
-
+    //learn C#      https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
   }
 }
 
