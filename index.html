@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Language Selector</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
 </head>
 <body>
+  <h1>Language Selector</h1>
   
+  <form>
+    <p>Answer these few short questions to find out which language is the right pick for you. Alternatively hit this button to just pick one at random!</p>
+    <button id="randomize" type="submit">Randomize Me</button>
+
+    <br><br>
+    <p>Question 1: Do you want to be challenged?</p>
+    <label>
+      <input type="radio" name="chal" value="yes" checked>
+      I love a good challenge!
+    </label>
+    <label>
+      <input type="radio" name="chal" value="maybe">
+      I could go either way
+    </label>
+    <label>
+      <input type="radio" name="chal" value="no">
+      Absolutely not
+    </label>
+  </form>
+
 </body>
 </html>
