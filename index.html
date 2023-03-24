@@ -15,17 +15,73 @@
     <br><br>
     <p>Question 1: Do you want to be challenged?</p>
     <label>
-      <input type="radio" name="chal" value="yes" checked>
+      <input type="radio" name="chal" value="2" checked>
       I love a good challenge!
     </label>
     <label>
-      <input type="radio" name="chal" value="maybe">
+      <input type="radio" name="chal" value="0">
       I could go either way
     </label>
     <label>
-      <input type="radio" name="chal" value="no">
+      <input type="radio" name="chal" value="-2">
       Absolutely not
     </label>
+    <br><br>
+    <p>Question 2: Did you actually answer the previous question correctly?</p>
+    <label>
+      <input type="radio" name="corr" value="-3" checked>
+      Doubtfully
+    </label>
+    <label>
+      <input type="radio" name="corr" value="2">
+      Negative
+    </label>
+    <label>
+      <input type="radio" name="corr" value="0">
+      Irresolutly
+    </label>
+    <br><br>
+    <p>Question 3: your thoughts on pasta?</p>
+    <label>
+      <input type="radio" name="past" value="yes" checked>
+      Enjoyable
+    </label>
+    <label>
+      <input type="radio" name="past" value="maybe">
+      Depressing
+    </label>
+    <br><br>
+    <p>Question 4: Approximately what time do you wake up at? (times are in AM)
+      <select id="time">
+        <option value="1">6:00</option>
+        <option value="-3">6:30</option>
+        <option value="-2">7:00</option>
+        <option value="3">7:30</option>
+        <option value="-1">8:00</option>
+        <option value="2">8:30</option>
+        <option value="1">9:00</option>
+        <option value="-5">9:30</option>
+        <option value="-4">9:31</option>
+        <option value="-3">9:32</option>
+        <option value="-2">9:33</option>
+        <option value="-1">9:34</option>
+        <option value="0">9:35</option>
+        <option value="1">9:36</option>
+        <option value="2">9:37</option>
+        <option value="3">9:38</option>
+        <option value="4">9:39</option>
+        <option value="5">9:40</option>
+        <option value="-1">10:33</option>
+        <option value="3">12:00+</option>
+      </select>
+    </p>
+    <p>Question 5: does your full name have an even number of letters or and odd number of letters:
+    <select id="lett">
+      <option value="2">Even</option>
+      <option value="-2">Odd</option>
+    </select>
+    <br><br><br>
+    <button id="completedForm" type="submit">Find my language</button>
   </form>
 
 </body>
