@@ -15,11 +15,11 @@
     <br><br>
     <p>Question 1: Do you want to be challenged?</p>
     <label>
-      <input type="radio" name="chal" value="2" checked>
+      <input type="radio" name="chal" value="0" checked>
       I love a good challenge!
     </label>
     <label>
-      <input type="radio" name="chal" value="0">
+      <input type="radio" name="chal" value="2">
       I could go either way
     </label>
     <label>
@@ -43,7 +43,7 @@
     <br><br>
     <p>Question 3: your thoughts on pasta?</p>
     <label>
-      <input type="radio" name="past" value="2" checked>
+      <input type="radio" name="past" value="3" checked>
       Enjoyable
     </label>
     <label>
@@ -77,16 +77,16 @@
     </p>
     <p>Question 5: does your full name have an even number of letters or and odd number of letters:
     <select id="lett">
-      <option value="2">Even</option>
-      <option value="-2">Odd</option>
+      <option value="-1">Even</option>
+      <option value="1">Odd</option>
     </select>
     <br><br><br>
     <button id="completedForm" type="submit">Find my language</button>
-  </form>
+  </form> 
 
   <br>
   <div id="results" class="hidden">
-  <p>Hello, the results are in! We calculated that the optimal language for you to learn is: <span id="showLanguage"></span>. Here is a good resource for you to learn more about this language to get started <a id="showLink" href=""></a></p>
+  <p>Hello, the results are in! We calculated that the optimal language for you to learn is: <span id="showLanguage"></span>. Here is a good resource for you to learn more about this language to get started <a id="showLink" href="https://www.google.com">Click Me</a></p>
   </div>
 </body>
 </html>
