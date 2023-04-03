@@ -10,8 +10,9 @@ This project through a carefully crafted algorithim will tell someone who is int
 - CSS
 
 ## Setup:
-- Download / clone repo
-- open project
+- Clone repository to your desktop
+- Navigate to the top level of the directory
+- open "index.html" into browser of your choice
 - Answer all questions and hit "Find my language" button 
     - or hit the "Randomize Me" button 
 - Read about which language you should be learning
